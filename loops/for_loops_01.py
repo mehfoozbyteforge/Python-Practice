@@ -38,3 +38,39 @@ for i in range(dig):
     else:
         break
 print('Sum of the number is :',sum)
+
+
+# Q4: Prime Number check(without converting to string)
+prm = int(input('Enter a number: '))
+if prm<=1:
+    print('The number is not prime.')
+else:
+    is_prime = True
+    for i in range(2,int(prm**0.5+1)):
+        if prm%i == 0:
+            is_prime = False
+            break
+if is_prime:
+    print('The chosen number of yours is a Prime number!')
+else:
+    print('The chosen number of yours is not a Prime number!')
+
+
+# Q5: Count Prime number in a range.
+start = int(input("Enter start of range: "))
+end = int(input("Enter end of range: "))
+
+count = 0
+
+for num in range(start, end + 1):
+
+    if num <= 1:
+        continue   
+
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            break
+    else:
+        count += 1  
+
+print("Total prime numbers:", count)
