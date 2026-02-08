@@ -67,3 +67,20 @@ for wr in wrd:
     if wr.isalpha():
         character_count += 1
 print('No of Characters:',character_count)
+
+
+# Q6: Convert string case manually
+
+text = "PyThOn ProGraMMing"
+result = ""
+
+for ch in text:
+    if 'a' <= ch <= 'z':
+        result += chr(ord(ch) - 32)
+    elif 'A' <= ch <= 'Z':
+        result += chr(ord(ch) + 32)
+    else:
+        result += ch   # space or symbol
+
+print("Converted string:", result)
+
