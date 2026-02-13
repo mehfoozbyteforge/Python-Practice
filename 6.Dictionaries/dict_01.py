@@ -25,9 +25,47 @@ student = {
 student["city"] = "Kolkata"
 
 # Update an existing value
-student["age"] = 22
+student["age"] = 18
 
 # Delete a key-value pair
 del student["course"]
 
-print("Updated dictionary:", student)
+print("\nUpdated dictionary:", student)
+
+
+# Q3: Trasverse a Dictionary using loops.
+
+student = {
+    "name": "Mehfooz",
+    "age": 21,
+    "course": "BCA"
+}
+print('\nKeys:')
+for key in student.keys():
+    print(key) 
+
+print('\nvalues:')
+for value in student.values():
+    print(value)
+
+print('\nKey-Value pairs:')
+for key , value in student.items():
+    print('keys:',key,',','Value:',value)
+
+
+# Q4: Sum of all values in a dictionary
+
+marks = {
+    "math": 85,
+    "science": 90,
+    "english": 78,
+    "history": 88
+}
+
+total = 0
+
+for value in marks.values():
+    total += value
+
+print("\nTotal marks:", total)
+
