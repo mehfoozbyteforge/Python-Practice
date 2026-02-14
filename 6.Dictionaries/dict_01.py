@@ -69,3 +69,24 @@ for value in marks.values():
 
 print("\nTotal marks:", total)
 
+
+
+# Q5: Find key with maximum value
+
+marks = {
+    "math": 85,
+    "science": 92,
+    "english": 78,
+    "history": 88
+}
+
+max_key = None
+max_value = None
+
+for key, value in marks.items():
+    if max_value is None or value > max_value:
+        max_value = value
+        max_key = key
+
+print("Highest marks subject:", max_key)
+print("Marks:", max_value)
