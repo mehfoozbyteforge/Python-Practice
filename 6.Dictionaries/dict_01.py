@@ -90,3 +90,19 @@ for key, value in marks.items():
 
 print("Highest marks subject:", max_key)
 print("Marks:", max_value)
+
+
+# Q6: Check if key exists
+
+student = {
+    "name": "Mehfooz",
+    "age": 22,
+    "city": "Kolkata"
+}
+
+search_key = input("Enter key to search: ")
+
+if search_key in student:
+    print("Key exists. Value:", student[search_key])
+else:
+    print("Key does not exist.")
