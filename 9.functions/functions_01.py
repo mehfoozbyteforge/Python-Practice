@@ -13,3 +13,13 @@ def greet(name):
 
 greet("Mehfooz")
 greet("Ray")
+
+
+# Q3: Function with return value
+
+def add(a, b):
+    return a + b
+
+result = add(10, 20)
+
+print("Sum is:", result)
