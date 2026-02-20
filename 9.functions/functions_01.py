@@ -23,3 +23,12 @@ def add(a, b):
 result = add(10, 20)
 
 print("Sum is:", result)
+
+
+# Q4: Default arguments
+
+def greet(name="Guest"):
+    print("Hello,", name)
+
+greet("Mehfooz")   # argument diya
+greet()            # argument nahi diya
