@@ -32,3 +32,13 @@ def greet(name="Guest"):
 
 greet("Mehfooz")   # argument diya
 greet()            # argument nahi diya
+
+
+# Q5: Keyword arguments
+
+def student_info(name, age, course):
+    print("Name:", name)
+    print("Age:", age)
+    print("Course:", course)
+
+student_info(age=18, name="Mehfooz", course="BCA")
