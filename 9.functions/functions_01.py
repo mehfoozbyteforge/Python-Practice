@@ -42,3 +42,16 @@ def student_info(name, age, course):
     print("Course:", course)
 
 student_info(age=18, name="Mehfooz", course="BCA")
+
+
+# Q6: Multiple return values
+
+def calculate(a, b):
+    total = a + b
+    diff = a - b
+    return total, diff
+
+result_sum, result_diff = calculate(20, 5)
+
+print("Sum:", result_sum)
+print("Difference:", result_diff)
