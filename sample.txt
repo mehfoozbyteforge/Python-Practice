@@ -1,0 +1,4 @@
+Hello Mehfooz!
+This is file handling practice.
+Appending new line...
+Backend journey continues.
