@@ -52,3 +52,28 @@ print("------")
 s2.display()
 
 
+# Q4: Class Methods vs Instance Methods
+
+class Student:
+    school_name = "ABC School"
+
+    def __init__(self, name):
+        self.name = name
+
+    # Instance method
+    def show_name(self):
+        print("\nStudent Name:", self.name)
+
+    # Class method
+    @classmethod
+    def show_school(cls):
+        print("School Name:", cls.school_name)
+
+
+s1 = Student("Mehfooz")
+
+# Calling instance method
+s1.show_name()
+
+# Calling class method
+Student.show_school()
