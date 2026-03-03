@@ -77,3 +77,30 @@ s1.show_name()
 
 # Calling class method
 Student.show_school()
+
+
+
+# Q5: Inheritance example
+
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+    def greet(self):
+        print("Hello, my name is", self.name)
+
+
+class Student(Person):  # Inheriting from Person
+    def __init__(self, name, roll):
+        super().__init__(name)  # Call parent constructor
+        self.roll = roll
+
+    def show_details(self):
+        print("Name:", self.name)
+        print("Roll No:", self.roll)
+
+
+s1 = Student("Mehfooz", 101)
+
+s1.greet()        # inherited method
+s1.show_details() # child method
