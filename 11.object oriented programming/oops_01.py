@@ -102,5 +102,47 @@ class Student(Person):  # Inheriting from Person
 
 s1 = Student("Mehfooz", 101)
 
+print('\n')
 s1.greet()        # inherited method
 s1.show_details() # child method
+
+
+
+# Q6: Method Overriding
+
+class Person:
+    def greet(self):
+        print("Hello, I am a person")
+
+
+class Student(Person):
+    def greet(self):
+        print("Hello, I am a student")
+
+
+p1 = Person()
+s1 = Student()
+
+print('\n')
+p1.greet()
+s1.greet()
+
+
+# Q7: Encapsulation example
+
+class BankAccount:
+    def __init__(self, balance):
+        self.__balance = balance   # private variable
+
+    def deposit(self, amount):
+        self.__balance += amount
+
+    def show_balance(self):
+        print("Balance:", self.__balance)
+
+
+acc = BankAccount(1000)
+
+acc.deposit(500)
+print('\n')
+acc.show_balance()
